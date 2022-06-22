@@ -26,7 +26,7 @@ Array(배열)은 인덱스로 임의 접근에 최적화, list는 순차적이�
 **비결정적인 함수** :
 
 <p align="center">
-  <img src="./resource/array1.png">
+  <img src="./resource/array1.PNG">
 </p>
 
 ## 2. 고차함수(higher-order function)
