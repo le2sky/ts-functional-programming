@@ -50,3 +50,13 @@ export const mapOrElse = <A, B>(
 ): B => {
   return getOrElse(map(oa, f), defaultValue);
 };
+
+export const flat = <A>(ooa: Option<Option<A>>): Option<A> => {
+  if (isSome(ooa)) return ooa.value;
+  return ooa;
+};
+
+export const flatMap = <A, B>(
+  oa: Option<A>,
+  f: (a: A) => Option<B>
+): Option<B> => flat(map(oa, f));
